@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Home")
+    return render(request,'global/base_home.html',{'nome':'jackson cavalcante da silva'})
 def contato(request):
     return HttpResponse("contato")
 def sobre(request):
